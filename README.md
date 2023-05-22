@@ -6,13 +6,9 @@ myEconomy is an external system for most of NorthWestTrees popular mods that cre
 - [x] Per player economy files
 - [x] Auto patch system for changes to config files.
 - [x] Economy character support.
+- [x] /Sell command to sell items to the server if in a config file.
 
 ### Planned Features
-- [ ] /Sell command.
-  - [ ] Ability to sell main-hand items.
-  - [ ] Config file for items that can be sold to the server.
-  - [ ] Tag support for the sell command items.
-  - [ ] Cross mod support for the sell command items.
 - [ ] /Buy command.
   - [ ] Ability to buy specific items using commands if the server allows for it.
   - [ ] Config file for buy items that can be bought.
