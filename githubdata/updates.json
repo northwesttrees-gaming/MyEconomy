@@ -1,10 +1,11 @@
 {
-  "homepage": "https://github.com/northwesttrees-gaming/CCTV-Craft",
+  "homepage": "https://github.com/northwesttrees-gaming/MyEconomy",
   "1.19.2": {
+    "1.1.0": "Added the sell command\nAdded sell items config file\nAdded script to get the sell price from the sell item config file\nAdded a a couple tags for the sell item file.\nAdded some other minor things.",
     "1.0.0": "Added mod config file\nAdded player economy files\nAdded support for config settings (cash, bank, bank_debt, bank_debt_cap, credit_card, credit_card_debt, credit_card_debt_cap, lone, lone_debt, lone_debt_cap)\nAdded auto patch support for player enconomy files\nAdded mod logo.png"
   },
   "promos": {
-    "1.19.2-latest": "1.0.0",
-    "1.19.2-recommended": "1.0.0",
+    "1.19.2-latest": "1.1.0",
+    "1.19.2-recommended": "1.1.0"
   }
 }
