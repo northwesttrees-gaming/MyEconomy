@@ -1,0 +1,129 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Blocks.LOG#0"
+      },
+      {
+        "value": "Blocks.LOG#1"
+      },
+      {
+        "value": "Blocks.LOG#2"
+      },
+      {
+        "value": "Blocks.LOG#3"
+      },
+      {
+        "value": "Blocks.LOG2#0"
+      },
+      {
+        "value": "Blocks.LOG2#1"
+      },
+      {
+        "value": "Blocks.WARPED_STEM"
+      },
+      {
+        "value": "Blocks.CRIMSON_STEM"
+      },
+      {
+        "value": "Blocks.MANGROVE_LOG"
+      },
+      {
+        "value": "Blocks.MANGROVE_ROOTS"
+      },
+      {
+        "value": "Blocks.MUDDY_MANGROVE_ROOTS"
+      },
+      {
+        "value": "Blocks.STRIPPED_OAK_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_SPRUCE_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_BIRCH_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_JUNGLE_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_ACACIA_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_DARK_OAK_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_WARPED_STEM"
+      },
+      {
+        "value": "Blocks.STRIPPED_CRIMSON_STEM"
+      },
+      {
+        "value": "Blocks.STRIPPED_MANGROVE_LOG"
+      },
+      {
+        "value": "Blocks.OAK_WOOD"
+      },
+      {
+        "value": "Blocks.SPRUCE_WOOD"
+      },
+      {
+        "value": "Blocks.BIRCH_WOOD"
+      },
+      {
+        "value": "Blocks.JUNGLE_WOOD"
+      },
+      {
+        "value": "Blocks.ACACIA_WOOD"
+      },
+      {
+        "value": "Blocks.DARK_OAK_WOOD"
+      },
+      {
+        "value": "Blocks.WARPED_HYPHAE"
+      },
+      {
+        "value": "Blocks.CRIMSON_HYPHAE"
+      },
+      {
+        "value": "Blocks.MANGROVE_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_OAK_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_SPRUCE_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_BIRCH_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_JUNGLE_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_ACACIA_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_DARK_OAK_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_WARPED_HYPHAE"
+      },
+      {
+        "value": "Blocks.STRIPPED_CRIMSON_HYPHAE"
+      },
+      {
+        "value": "Blocks.STRIPPED_MANGROVE_WOOD"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "economy/logs",
+    "namespace": "myeconomy"
+  }
+}

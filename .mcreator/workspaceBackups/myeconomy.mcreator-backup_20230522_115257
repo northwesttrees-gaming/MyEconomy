@@ -17,7 +17,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Config Files/Modification"
     },
     {
       "name": "GeneratePlayerConfig",
@@ -40,7 +41,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Config Files/Player"
     },
     {
       "name": "GetConfigVersion",
@@ -60,7 +62,71 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Config Files/Modification"
+    },
+    {
+      "name": "GetConfigCurrencyIcon",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_config_currency_icon",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetConfigCurrencyIconProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification"
+    },
+    {
+      "name": "SellItemCommand",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_item_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/SellItemCommandProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "Sell",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/command/SellCommand.java"
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "SellCommandMsg",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_command_msg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/SellCommandMsgProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Commands"
     }
   ],
   "variable_elements": [
@@ -77,11 +143,29 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Config Files",
+        "children": [
+          {
+            "name": "Modification",
+            "children": []
+          },
+          {
+            "name": "Player",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Commands",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "myeconomy",
-    "modName": "myEconomy",
+    "modName": "MyEconomy",
     "version": "1.0.0",
     "description": "myEconomy is an external system for most of NorthWestTrees popular mods that creates player config files using an MCreator plugin called File Manager. Other mods can use the economic system built into this API modification if they wish.",
     "author": "NorthWestTrees",
@@ -89,6 +173,7 @@
     "license": "GNU General Public License version 3 (GPLv3)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "updateURL": "https://raw.githubusercontent.com/northwesttrees-gaming/MyEconomy/main/githubdata/updates.json",
     "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
