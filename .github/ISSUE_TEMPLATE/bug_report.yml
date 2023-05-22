@@ -4,8 +4,40 @@ labels: Bug
 body:
  - type: textarea
    attributes:
-    label: Issue description
+    label: Issue Description
     description: Explain clearly what the problem is about.
     placeholder: Tell us here about the bug/issue.
    validations:
     required: true
+ - type: textarea
+   attributes:
+    label: How To Reproduce It
+    description: Give a step by step instruction how we can reproduce the issue.
+    placeholder: | 
+     1. Use this trigger to read the file
+     2. Try to read the file located at <file path>
+     3. The game will do <issue>
+     ...
+   validations:
+    required: true
+ - type: textarea
+   attributes:
+    label: MyEconomy Build
+    description: List what modification build this issue/bug happened on.
+    placeholder: Eg: 1.0.0
+   validations:
+    required: true
+ - type: textarea
+   attributes:
+    label: Game Build
+    description: List what game version this issue/bug happened on.
+    placeholder: Eg: 1.19.2
+   validations:
+    required: true
+ - type: textarea
+   attributes:
+    label: Attachments
+    description: Attaching a minimum workspace with ONLY the nessasary files can help us troubleshoot the issue.
+    placeholder: Drop your Zip or Image files here.
+   validations:
+    required: false
