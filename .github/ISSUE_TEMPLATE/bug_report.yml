@@ -3,14 +3,14 @@ description: Report a bug or issue. (Search for duplicates first)
 labels: Bug
 body:
  - type: textarea
-   attributes:
+    attributes:
     label: Issue Description
     description: Explain clearly what the problem is about.
     placeholder: Tell us here about the bug/issue.
-   validations:
+    validations:
     required: true
  - type: textarea
-   attributes:
+    attributes:
     label: How To Reproduce It
     description: Give a step by step instruction how we can reproduce the issue.
     placeholder: | 
@@ -18,26 +18,26 @@ body:
      2. Try to read the file located at <file path>
      3. The game will do <issue>
      ...
-   validations:
+     validations:
     required: true
  - type: textarea
-   attributes:
+    attributes:
     label: MyEconomy Build
     description: List what modification build this issue/bug happened on.
     placeholder: Eg: 1.0.0
-   validations:
+    validations:
     required: true
  - type: textarea
-   attributes:
+    attributes:
     label: Game Build
     description: List what game version this issue/bug happened on.
     placeholder: Eg: 1.19.2
-   validations:
+    validations:
     required: true
  - type: textarea
-   attributes:
+    attributes:
     label: Attachments
     description: Attaching a minimum workspace with ONLY the nessasary files can help us troubleshoot the issue.
     placeholder: Drop your Zip or Image files here.
-   validations:
+    validations:
     required: false
