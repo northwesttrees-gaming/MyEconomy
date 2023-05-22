@@ -18,7 +18,7 @@ body:
      2. Try to read the file located at <file path>
      3. The game will do <issue>
      ...
-     validations:
+    validations:
     required: true
  - type: textarea
     attributes:
