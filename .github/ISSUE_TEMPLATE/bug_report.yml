@@ -1,8 +1,8 @@
-name: Bug Report
-description: Report a issue or problem.
-title: '[Bug]'
-labels: 'Bug'
-assignees: ''
+name: "Bug Report"
+description: "Report a issue or problem"
+assignees: ""
+labels: "Bug"
+title: "[Bug]"
 body:
 - type: input
   id: prevalence
