@@ -1,14 +1,11 @@
-name: "Bug Report"
-description: "Report a issue or problem"
-assignees: ""
-labels: "Bug"
-title: "[Bug]"
+name: Bug Report
+description: Report a bug or issue. (Search for duplicates first)
+labels: Bug
 body:
-- type: input
-  id: prevalence
-  attributes:
-    label: Bug prevalence
-    description: "How often do you or others encounter this bug?"
-    placeholder: "Whenever I visit the user account page (1-2 times a week)"
-  validations:
+ - type: textarea
+   attributes:
+    label: Issue description
+    description: Explain clearly what the problem is about.
+    placeholder: Tell us here about the bug/issue.
+   validations:
     required: true
