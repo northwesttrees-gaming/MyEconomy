@@ -24,14 +24,14 @@ body:
    attributes:
      label: MyEconomy Build
      description: List what modification build this issue/bug happened on.
-     placeholder: Eg: 1.0.0
+     placeholder: Eg 1.0.0
    validations:
      required: true
  - type: textarea
    attributes:
      label: Game Build
      description: List what game version this issue/bug happened on.
-     placeholder: Eg: 1.19.2
+     placeholder: Eg 1.19.2
    validations:
      required: true
  - type: textarea
