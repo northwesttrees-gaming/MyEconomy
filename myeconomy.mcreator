@@ -89,6 +89,7 @@
     "license": "GNU General Public License version 3 (GPLv3)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "updateURL": "https://raw.githubusercontent.com/northwesttrees-gaming/MyEconomy/main/githubdata/updates.json",
     "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],

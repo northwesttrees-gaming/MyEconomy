@@ -41,6 +41,26 @@
           }
         ]
       }
+    },
+    {
+      "name": "GetConfigVersion",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_config_version",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetConfigVersionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -48,15 +68,12 @@
       "name": "version",
       "type": "number",
       "scope": "map",
-      "value": "2.0"
+      "value": "1.0"
     }
   ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "gui.shopblock.player_shop_inventory_owner.label_player_money": "Player Money",
-      "gui.shopblock.player_shop_inventory_owner.label_block_money": "Block Money"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
@@ -64,7 +81,7 @@
   },
   "workspaceSettings": {
     "modid": "myeconomy",
-    "modName": "myEconomy",
+    "modName": "MyEconomy",
     "version": "1.0.0",
     "description": "myEconomy is an external system for most of NorthWestTrees popular mods that creates player config files using an MCreator plugin called File Manager. Other mods can use the economic system built into this API modification if they wish.",
     "author": "NorthWestTrees",
@@ -72,6 +89,7 @@
     "license": "GNU General Public License version 3 (GPLv3)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

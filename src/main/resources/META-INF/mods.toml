@@ -5,9 +5,11 @@ license="GNU General Public License version 3 (GPLv3)"
 [[mods]]
 modId="myeconomy"
 version="1.0.0"
-displayName="myEconomy"
+displayName="MyEconomy"
 credits="Mojang, Forge, MCreator"
 displayURL="https://mcreator.net"
+updateJSONURL="https://raw.githubusercontent.com/northwesttrees-gaming/MyEconomy/main/githubdata/updates.json"
+logoFile="logo.png"
 authors="NorthWestTrees"
 description='''
 myEconomy is an external system for most of NorthWestTrees popular mods that creates player config files using an MCreator plugin called File Manager. Other mods can use the economic system built into this API modification if they wish.
