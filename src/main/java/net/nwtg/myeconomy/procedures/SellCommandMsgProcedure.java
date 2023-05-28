@@ -13,7 +13,7 @@ public class SellCommandMsgProcedure {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(Component.literal("\u00A79[MyEconomy] - Sell Command"), (false));
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("\u00A76/sell item\u00A7f: Sells your main hand item"), (false));
+				_player.displayClientMessage(Component.literal("\u00A76/sell <items> <hand> [amount]\u00A7f: Sells items from your main hand."), (false));
 		}
 	}
 }

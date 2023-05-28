@@ -4,7 +4,7 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="myeconomy"
-version="1.1.0"
+version="1.2.0"
 displayName="MyEconomy"
 credits="Mojang, Forge, MCreator"
 displayURL="https://github.com/northwesttrees-gaming/MyEconomy"

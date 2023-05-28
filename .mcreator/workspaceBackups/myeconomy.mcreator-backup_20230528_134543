@@ -1,0 +1,4134 @@
+{
+  "mod_elements": [
+    {
+      "name": "GeneratePlayerConfig",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_player_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GeneratePlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player"
+    },
+    {
+      "name": "GetConfigVersion",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_config_version",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetConfigVersionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Reading"
+    },
+    {
+      "name": "GetConfigCurrencyIcon",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_config_currency_icon",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetConfigCurrencyIconProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Reading"
+    },
+    {
+      "name": "Sell",
+      "type": "command",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/command/SellCommand.java"
+        ]
+      },
+      "path": "~/Commands/Sell"
+    },
+    {
+      "name": "SellCommandMsg",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_command_msg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/SellCommandMsgProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Sell/Procedures"
+    },
+    {
+      "name": "GenerateEconomySellConfig",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_economy_sell_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateEconomySellConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Commands/Sell"
+    },
+    {
+      "name": "FindSellItemPrice",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "find_sell_item_price",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/FindSellItemPriceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Sell/Procedures"
+    },
+    {
+      "name": "EconomyPlanksItem",
+      "type": "tag",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "economy_planks_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/myeconomy/tags/items/economy/planks.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "EconomyLogsItem",
+      "type": "tag",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "economy_logs_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/myeconomy/tags/items/economy/logs.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "Buy",
+      "type": "command",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/command/BuyCommand.java"
+        ]
+      },
+      "path": "~/Commands/Buy"
+    },
+    {
+      "name": "FindBuyItemPrice",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "find_buy_item_price",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/FindBuyItemPriceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Buy/Procedures"
+    },
+    {
+      "name": "GenerateEconomyBuyConfig",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_economy_buy_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateEconomyBuyConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Commands/Buy"
+    },
+    {
+      "name": "BuyCommandMsg",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_command_msg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/BuyCommandMsgProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Buy/Procedures"
+    },
+    {
+      "name": "SellItemsHandCommand",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_items_hand_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/SellItemsHandCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Sell/Procedures"
+    },
+    {
+      "name": "SellItemsHandAmountCommand",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_items_hand_amount_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/SellItemsHandAmountCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Sell/Procedures"
+    },
+    {
+      "name": "BuyItemsItemCommand",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_items_item_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/BuyItemsItemCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Buy/Procedures"
+    },
+    {
+      "name": "BuyItemsItemAmountCommand",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buy_items_item_amount_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/BuyItemsItemAmountCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Buy/Procedures"
+    },
+    {
+      "name": "GetStartingCashForPlayerConfig",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_cash_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingCashForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingBankForPlayerConfig",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_bank_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingBankForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingBankDebtForPlayerConfig",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_bank_debt_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingBankDebtForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingBankDebtCapForPlayerConfig",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_bank_debt_cap_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingBankDebtCapForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingCreditCardForPlayerConfig",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_credit_card_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingCreditCardForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingCreditCardDebtForPlayerConfig",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_credit_card_debt_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingCreditCardDebtForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingCreditCardDebtCapForPlayerConfig",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_credit_card_debt_cap_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingCreditCardDebtCapForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingStintForPlayerConfig",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_stint_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingStintForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingIsJailedForPlayerConfig",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_is_jailed_for_player_config",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingIsJailedForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingPreJailXForPlayerConfig",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_pre_jail_x_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingPreJailXForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingPreJailYForPlayerConfig",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_pre_jail_y_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingPreJailYForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingPreJailZForPlayerConfig",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_pre_jail_z_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingPreJailZForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingJailXForPlayerConfig",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_jail_x_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingJailXForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingJailYForPlayerConfig",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_jail_y_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingJailYForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingJailZForPlayerConfig",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_jail_z_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingJailZForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingHasHomeForPlayerConfig",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_has_home_for_player_config",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingHasHomeForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingHomeXForPlayerConfig",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_home_x_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingHomeXForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingHomeYForPlayerConfig",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_home_y_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingHomeYForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingHomeZForPlayerConfig",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_home_z_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingHomeZForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GenerateDefaultWorldConfig",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_default_world_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateDefaultWorldConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Generation/Default World"
+    },
+    {
+      "name": "GenerateWorldNamespace",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_world_namespace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateWorldNamespaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Generation"
+    },
+    {
+      "name": "GenerateWorldConfig",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_world_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateWorldConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/World"
+    },
+    {
+      "name": "GetStartingIsSpawnSetForWorldConfig",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_is_spawn_set_for_world_config",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingIsSpawnSetForWorldConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/World/Script"
+    },
+    {
+      "name": "GetStartingSpawnXForWorldConfig",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_spawn_x_for_world_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingSpawnXForWorldConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/World/Script"
+    },
+    {
+      "name": "GetStartingSpawnYForWorldConfig",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_spawn_y_for_world_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingSpawnYForWorldConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/World/Script"
+    },
+    {
+      "name": "GetStartingSpawnZForWorldConfig",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_spawn_z_for_world_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingSpawnZForWorldConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/World/Script"
+    },
+    {
+      "name": "GetStartingLoanForPlayerConfig",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_loan_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingLoanForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingLoanDebtForPlayerConfig",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_loan_debt_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingLoanDebtForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "GetStartingLoanDebtCapForPlayerConfig",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_starting_loan_debt_cap_for_player_config",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetStartingLoanDebtCapForPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player/Script"
+    },
+    {
+      "name": "Check",
+      "type": "command",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/command/CheckCommand.java"
+        ]
+      },
+      "path": "~/Commands/Check"
+    },
+    {
+      "name": "CheckPlayerBankPlayerName",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_bank_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerBankPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Bank"
+    },
+    {
+      "name": "CheckPlayerBankPlayer",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_bank_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerBankPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Bank"
+    },
+    {
+      "name": "CheckPlayerBankPlayerNameScript",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_bank_player_name_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerBankPlayerNameScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Bank/Script"
+    },
+    {
+      "name": "CheckPlayerBankPlayerScript",
+      "type": "procedure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_bank_player_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerBankPlayerScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Bank/Script"
+    },
+    {
+      "name": "CheckPlayerBankDebtPlayerName",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_bank_debt_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerBankDebtPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Bank Debt"
+    },
+    {
+      "name": "CheckPlayerBankDebtPlayer",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_bank_debt_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerBankDebtPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Bank Debt"
+    },
+    {
+      "name": "CheckPlayerBankDebtPlayerNameScript",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_bank_debt_player_name_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerBankDebtPlayerNameScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Bank Debt/Script"
+    },
+    {
+      "name": "CheckPlayerBankDebtPlayerScript",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_bank_debt_player_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerBankDebtPlayerScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Bank Debt/Script"
+    },
+    {
+      "name": "CheckPlayerBankDebtCapPlayerName",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_bank_debt_cap_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerBankDebtCapPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Bank Debt Cap"
+    },
+    {
+      "name": "CheckPlayerBankDebtCapPlayer",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_bank_debt_cap_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerBankDebtCapPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Bank Debt Cap"
+    },
+    {
+      "name": "CheckPlayerBankDebtCapPlayerNameScript",
+      "type": "procedure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_bank_debt_cap_player_name_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerBankDebtCapPlayerNameScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Bank Debt Cap/Script"
+    },
+    {
+      "name": "CheckPlayerBankDebtCapPlayerScript",
+      "type": "procedure",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_bank_debt_cap_player_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerBankDebtCapPlayerScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Bank Debt Cap/Script"
+    },
+    {
+      "name": "CheckPlayerCashPlayerName",
+      "type": "procedure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_cash_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCashPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Cash"
+    },
+    {
+      "name": "CheckPlayerCashPlayer",
+      "type": "procedure",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_cash_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCashPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Cash"
+    },
+    {
+      "name": "CheckPlayerCashPlayerNameScript",
+      "type": "procedure",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_cash_player_name_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCashPlayerNameScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Cash/Script"
+    },
+    {
+      "name": "CheckPlayerCashPlayerScript",
+      "type": "procedure",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_cash_player_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCashPlayerScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Cash/Script"
+    },
+    {
+      "name": "CheckPlayerCreditCardPlayerName",
+      "type": "procedure",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_credit_card_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCreditCardPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Credit Card"
+    },
+    {
+      "name": "CheckPlayerCreditCardPlayer",
+      "type": "procedure",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_credit_card_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCreditCardPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Credit Card"
+    },
+    {
+      "name": "CheckPlayerCreditCardPlayerNameScript",
+      "type": "procedure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_credit_card_player_name_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCreditCardPlayerNameScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Credit Card/Script"
+    },
+    {
+      "name": "CheckPlayerCreditCardPlayerScript",
+      "type": "procedure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_credit_card_player_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCreditCardPlayerScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Credit Card/Script"
+    },
+    {
+      "name": "CheckPlayerCreditCardDebtPlayerName",
+      "type": "procedure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_credit_card_debt_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCreditCardDebtPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Credit Card Debt"
+    },
+    {
+      "name": "CheckPlayerCreditCardDebtPlayer",
+      "type": "procedure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_credit_card_debt_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCreditCardDebtPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Credit Card Debt"
+    },
+    {
+      "name": "CheckPlayerCreditCardDebtPlayerNameScript",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_credit_card_debt_player_name_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCreditCardDebtPlayerNameScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Credit Card Debt/Script"
+    },
+    {
+      "name": "CheckPlayerCreditCardDebtPlayerScript",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_credit_card_debt_player_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCreditCardDebtPlayerScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Credit Card Debt/Script"
+    },
+    {
+      "name": "CheckPlayerCreditCardDebtCapPlayerName",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_credit_card_debt_cap_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCreditCardDebtCapPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Credit Card Debt Cap"
+    },
+    {
+      "name": "CheckPlayerCreditCardDebtCapPlayer",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_credit_card_debt_cap_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCreditCardDebtCapPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Credit Card Debt Cap"
+    },
+    {
+      "name": "CheckPlayerCreditCardDebtCapPlayerNameScript",
+      "type": "procedure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_credit_card_debt_cap_player_name_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCreditCardDebtCapPlayerNameScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Credit Card Debt Cap/Script"
+    },
+    {
+      "name": "CheckPlayerCreditCardDebtCapPlayerScript",
+      "type": "procedure",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_credit_card_debt_cap_player_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCreditCardDebtCapPlayerScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Credit Card Debt Cap/Script"
+    },
+    {
+      "name": "CheckPlayerHomePositionPlayerName",
+      "type": "procedure",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_home_position_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerHomePositionPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Home Position"
+    },
+    {
+      "name": "CheckPlayerHomePositionPlayer",
+      "type": "procedure",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_home_position_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerHomePositionPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Home Position"
+    },
+    {
+      "name": "CheckPlayerHomePositionPlayerNameXScript",
+      "type": "procedure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_home_position_player_name_x_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerHomePositionPlayerNameXScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Home Position/Script"
+    },
+    {
+      "name": "CheckPlayerHomePositionPlayerNameYScript",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_home_position_player_name_y_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerHomePositionPlayerNameYScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Home Position/Script"
+    },
+    {
+      "name": "CheckPlayerHomePositionPlayerNameZScript",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_home_position_player_name_z_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerHomePositionPlayerNameZScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Home Position/Script"
+    },
+    {
+      "name": "CheckPlayerHomePositionPlayerNameHasHomeScript",
+      "type": "procedure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_home_position_player_name_has_home_script",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerHomePositionPlayerNameHasHomeScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Home Position/Script"
+    },
+    {
+      "name": "CheckPlayerHomePositionPlayerXScript",
+      "type": "procedure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_home_position_player_x_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerHomePositionPlayerXScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Home Position/Script"
+    },
+    {
+      "name": "CheckPlayerHomePositionPlayerYScript",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_home_position_player_y_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerHomePositionPlayerYScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Home Position/Script"
+    },
+    {
+      "name": "CheckPlayerHomePositionPlayerZScript",
+      "type": "procedure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_home_position_player_z_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerHomePositionPlayerZScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Home Position/Script"
+    },
+    {
+      "name": "CheckPlayerHomePositionPlayerHasHomeScript",
+      "type": "procedure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_home_position_player_has_home_script",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerHomePositionPlayerHasHomeScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Home Position/Script"
+    },
+    {
+      "name": "CheckPlayerJailPositionPlayerName",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_jail_position_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerJailPositionPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Jail Position"
+    },
+    {
+      "name": "CheckPlayerJailPositionPlayer",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_jail_position_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerJailPositionPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Jail Position"
+    },
+    {
+      "name": "CheckPlayerJailPositionPlayerNameXScript",
+      "type": "procedure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_jail_position_player_name_x_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerJailPositionPlayerNameXScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerJailPositionPlayerNameYScript",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_jail_position_player_name_y_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerJailPositionPlayerNameYScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerJailPositionPlayerNameZScript",
+      "type": "procedure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_jail_position_player_name_z_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerJailPositionPlayerNameZScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerJailPositionPlayerNameIsJailedScript",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_jail_position_player_name_is_jailed_script",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerJailPositionPlayerNameIsJailedScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerJailPositionPlayerXScript",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_jail_position_player_x_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerJailPositionPlayerXScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerJailPositionPlayerYScript",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_jail_position_player_y_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerJailPositionPlayerYScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerJailPositionPlayerZScript",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_jail_position_player_z_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerJailPositionPlayerZScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerJailPositionPlayerIsJailedScript",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_jail_position_player_is_jailed_script",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerJailPositionPlayerIsJailedScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerLoanPlayerName",
+      "type": "procedure",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_loan_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerLoanPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Loan"
+    },
+    {
+      "name": "CheckPlayerLoanPlayer",
+      "type": "procedure",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_loan_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerLoanPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Loan"
+    },
+    {
+      "name": "CheckPlayerLoanPlayerNameScript",
+      "type": "procedure",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_loan_player_name_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerLoanPlayerNameScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Loan/Script"
+    },
+    {
+      "name": "CheckPlayerLoanPlayerScript",
+      "type": "procedure",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_loan_player_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerLoanPlayerScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Loan/Script"
+    },
+    {
+      "name": "CheckPlayerLoanDebtPlayerName",
+      "type": "procedure",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_loan_debt_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerLoanDebtPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Loan Debt"
+    },
+    {
+      "name": "CheckPlayerLoanDebtPlayer",
+      "type": "procedure",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_loan_debt_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerLoanDebtPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Loan Debt"
+    },
+    {
+      "name": "CheckPlayerLoanDebtPlayerNameScript",
+      "type": "procedure",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_loan_debt_player_name_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerLoanDebtPlayerNameScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Loan Debt/Script"
+    },
+    {
+      "name": "CheckPlayerLoanDebtPlayerScript",
+      "type": "procedure",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_loan_debt_player_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerLoanDebtPlayerScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Loan Debt/Script"
+    },
+    {
+      "name": "CheckPlayerLoanDebtCapPlayerName",
+      "type": "procedure",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_loan_debt_cap_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerLoanDebtCapPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Loan Debt Cap"
+    },
+    {
+      "name": "CheckPlayerLoanDebtCapPlayer",
+      "type": "procedure",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_loan_debt_cap_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerLoanDebtCapPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Loan Debt Cap"
+    },
+    {
+      "name": "CheckPlayerLoanDebtCapPlayerNameScript",
+      "type": "procedure",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_loan_debt_cap_player_name_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerLoanDebtCapPlayerNameScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Loan Debt Cap/Script"
+    },
+    {
+      "name": "CheckPlayerLoanDebtCapPlayerScript",
+      "type": "procedure",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_loan_debt_cap_player_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerLoanDebtCapPlayerScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Loan Debt Cap/Script"
+    },
+    {
+      "name": "CheckPlayerPreJailPositionPlayerName",
+      "type": "procedure",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_pre_jail_position_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerPreJailPositionPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Pre Jail Position"
+    },
+    {
+      "name": "CheckPlayerPreJailPositionPlayer",
+      "type": "procedure",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_pre_jail_position_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerPreJailPositionPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Pre Jail Position"
+    },
+    {
+      "name": "CheckPlayerPreJailPositionPlayerNameXScript",
+      "type": "procedure",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_pre_jail_position_player_name_x_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerPreJailPositionPlayerNameXScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Pre Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerPreJailPositionPlayerNameYScript",
+      "type": "procedure",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_pre_jail_position_player_name_y_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerPreJailPositionPlayerNameYScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Pre Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerPreJailPositionPlayerNameZScript",
+      "type": "procedure",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_pre_jail_position_player_name_z_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerPreJailPositionPlayerNameZScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Pre Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerPreJailPositionPlayerNameIsJailedScript",
+      "type": "procedure",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_pre_jail_position_player_name_is_jailed_script",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerPreJailPositionPlayerNameIsJailedScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Pre Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerPreJailPositionPlayerXScript",
+      "type": "procedure",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_pre_jail_position_player_x_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerPreJailPositionPlayerXScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Pre Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerPreJailPositionPlayerYScript",
+      "type": "procedure",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_pre_jail_position_player_y_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerPreJailPositionPlayerYScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Pre Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerPreJailPositionPlayerZScript",
+      "type": "procedure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_pre_jail_position_player_z_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerPreJailPositionPlayerZScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Pre Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerPreJailPositionPlayerIsJailedScript",
+      "type": "procedure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_pre_jail_position_player_is_jailed_script",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerPreJailPositionPlayerIsJailedScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Pre Jail Position/Script"
+    },
+    {
+      "name": "CheckPlayerStintPlayerName",
+      "type": "procedure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_stint_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerStintPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Stint"
+    },
+    {
+      "name": "CheckPlayerStintPlayer",
+      "type": "procedure",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_stint_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerStintPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Stint"
+    },
+    {
+      "name": "CheckPlayerStintPlayerNameScript",
+      "type": "procedure",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_stint_player_name_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerStintPlayerNameScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Stint/Script"
+    },
+    {
+      "name": "CheckPlayerStintPlayerScript",
+      "type": "procedure",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_stint_player_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerStintPlayerScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Stint/Script"
+    },
+    {
+      "name": "CheckPriceBuyItemAmount",
+      "type": "procedure",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_price_buy_item_amount",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPriceBuyItemAmountProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Price/Buy"
+    },
+    {
+      "name": "CheckPriceBuyItem",
+      "type": "procedure",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_price_buy_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPriceBuyItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Price/Buy"
+    },
+    {
+      "name": "CheckPriceBuyFindItemPriceScript",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_price_buy_find_item_price_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPriceBuyFindItemPriceScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Price/Buy/Script"
+    },
+    {
+      "name": "CheckPriceSellItemAmount",
+      "type": "procedure",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_price_sell_item_amount",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPriceSellItemAmountProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Price/Sell"
+    },
+    {
+      "name": "CheckPriceSellItem",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_price_sell_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPriceSellItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Price/Sell"
+    },
+    {
+      "name": "CheckPriceSellFindItemPriceScript",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_price_sell_find_item_price_script",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPriceSellFindItemPriceScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Price/Sell/Script"
+    },
+    {
+      "name": "CheckCmdMessage",
+      "type": "procedure",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_cmd_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckCmdMessageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures"
+    },
+    {
+      "name": "CheckPlayerCmdMessage",
+      "type": "procedure",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_cmd_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCmdMessageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player"
+    },
+    {
+      "name": "CheckPlayerCmdHelpMessage1",
+      "type": "procedure",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_cmd_help_message_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCmdHelpMessage1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Help/Script"
+    },
+    {
+      "name": "CheckPlayerCmdHelpMessage2",
+      "type": "procedure",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_cmd_help_message_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCmdHelpMessage2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Help/Script"
+    },
+    {
+      "name": "CheckPlayerCmdHelpMessage",
+      "type": "procedure",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_cmd_help_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerCmdHelpMessageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player/Help"
+    },
+    {
+      "name": "CheckPlayerSubCmdMessage",
+      "type": "procedure",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_player_sub_cmd_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPlayerSubCmdMessageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Player"
+    },
+    {
+      "name": "CheckPriceCmdMessage",
+      "type": "procedure",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_price_cmd_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPriceCmdMessageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Price"
+    },
+    {
+      "name": "CheckPriceBuyCmdMessage",
+      "type": "procedure",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_price_buy_cmd_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPriceBuyCmdMessageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Price/Buy"
+    },
+    {
+      "name": "CheckPriceSellCmdMessage",
+      "type": "procedure",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_price_sell_cmd_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/CheckPriceSellCmdMessageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Check/Procedures/Price/Sell"
+    },
+    {
+      "name": "SetPlayersHomeOnJoinIfNone",
+      "type": "procedure",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_players_home_on_join_if_none",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/SetPlayersHomeOnJoinIfNoneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Script/Set Home On Join"
+    },
+    {
+      "name": "HomeSetPlayerName",
+      "type": "procedure",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "home_set_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/HomeSetPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Home/Procedures/Set"
+    },
+    {
+      "name": "HomeSetPlayer",
+      "type": "procedure",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "home_set_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/HomeSetPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Home/Procedures/Set"
+    },
+    {
+      "name": "HomeSetPlayerDefualt",
+      "type": "procedure",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "home_set_player_defualt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/HomeSetPlayerDefualtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Home/Procedures/Set"
+    },
+    {
+      "name": "HomeTpPlayerName",
+      "type": "procedure",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "home_tp_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/HomeTpPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Home/Procedures/Tp"
+    },
+    {
+      "name": "GetSettingsHomeTpPermission",
+      "type": "procedure",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_settings_home_tp_permission",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetSettingsHomeTpPermissionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Reading"
+    },
+    {
+      "name": "HomeTpPlayer",
+      "type": "procedure",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "home_tp_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/HomeTpPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Home/Procedures/Tp"
+    },
+    {
+      "name": "HomeTpPlayerDefault",
+      "type": "procedure",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "home_tp_player_default",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/HomeTpPlayerDefaultProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Home/Procedures/Tp"
+    },
+    {
+      "name": "Home",
+      "type": "command",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "home",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/command/HomeCommand.java"
+        ]
+      },
+      "path": "~/Commands/Home"
+    },
+    {
+      "name": "HomeCmdMessage",
+      "type": "procedure",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "home_cmd_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/HomeCmdMessageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Home/Procedures"
+    },
+    {
+      "name": "MinecraftLoadsAWorldMain",
+      "type": "procedure",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minecraft_loads_a_world_main",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/MinecraftLoadsAWorldMainProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files"
+    },
+    {
+      "name": "GenerateDefaultPlayerConfigEconomy",
+      "type": "procedure",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_default_player_config_economy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateDefaultPlayerConfigEconomyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Generation/Default Player"
+    },
+    {
+      "name": "GenerateDefaultPlayerConfigJail",
+      "type": "procedure",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_default_player_config_jail",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateDefaultPlayerConfigJailProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Generation/Default Player"
+    },
+    {
+      "name": "GenerateDefaultPlayerConfigHome",
+      "type": "procedure",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_default_player_config_home",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateDefaultPlayerConfigHomeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Generation/Default Player"
+    },
+    {
+      "name": "GenerateDefaultWorldConfigSpawn",
+      "type": "procedure",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_default_world_config_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateDefaultWorldConfigSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Generation/Default World"
+    },
+    {
+      "name": "GenerateDefaultPlayerConfig",
+      "type": "procedure",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_default_player_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateDefaultPlayerConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Generation/Default Player"
+    },
+    {
+      "name": "GenerateSettingsConfig",
+      "type": "procedure",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_settings_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateSettingsConfigProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Generation/Mod"
+    },
+    {
+      "name": "GenerateWorldConfigSpawn",
+      "type": "procedure",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_world_config_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateWorldConfigSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/World"
+    },
+    {
+      "name": "GenerateWorldConfigUpdateVersion",
+      "type": "procedure",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_world_config_update_version",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateWorldConfigUpdateVersionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/World"
+    },
+    {
+      "name": "GeneratePlayerConfigEconomy",
+      "type": "procedure",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_player_config_economy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GeneratePlayerConfigEconomyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player"
+    },
+    {
+      "name": "GeneratePlayerConfigJail",
+      "type": "procedure",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_player_config_jail",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GeneratePlayerConfigJailProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player"
+    },
+    {
+      "name": "GeneratePlayerConfigHome",
+      "type": "procedure",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_player_config_home",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GeneratePlayerConfigHomeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player"
+    },
+    {
+      "name": "GeneratePlayerConfigUpdateVersion",
+      "type": "procedure",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_player_config_update_version",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GeneratePlayerConfigUpdateVersionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Player"
+    },
+    {
+      "name": "PlayerJoinsAWorldMain",
+      "type": "procedure",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_joins_a_world_main",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/PlayerJoinsAWorldMainProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files"
+    },
+    {
+      "name": "GenerateDefaultPlayerConfigUpdateVersion",
+      "type": "procedure",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_default_player_config_update_version",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateDefaultPlayerConfigUpdateVersionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Generation/Default Player"
+    },
+    {
+      "name": "GenerateDefaultWorldConfigUpdateVersion",
+      "type": "procedure",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_default_world_config_update_version",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateDefaultWorldConfigUpdateVersionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Generation/Default World"
+    },
+    {
+      "name": "GenerateSettingsConfigUpdateVersion",
+      "type": "procedure",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_settings_config_update_version",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateSettingsConfigUpdateVersionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Generation/Mod"
+    },
+    {
+      "name": "GenerateSettingsConfigSettings",
+      "type": "procedure",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generate_settings_config_settings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GenerateSettingsConfigSettingsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Generation/Mod"
+    },
+    {
+      "name": "Spawn",
+      "type": "command",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/command/SpawnCommand.java"
+        ]
+      },
+      "path": "~/Commands/Spawn"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "version",
+      "type": "number",
+      "scope": "map",
+      "value": "3.0"
+    },
+    {
+      "name": "worldNamespace",
+      "type": "string",
+      "scope": "world",
+      "value": ""
+    },
+    {
+      "name": "worldName",
+      "type": "string",
+      "scope": "world",
+      "value": ""
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "msg.myeconomy.check_player_cmd_help_message2.line3": "§6loanDebt §f- Will check players loan debt",
+      "msg.myeconomy.check_player_cmd_help_message2.line2": "§6loan §f- Will check players loan money",
+      "msg.myeconomy.check_player_cmd_help_message2.line1": "§6jailPosition §f- Will check players jail position",
+      "msg.myeconomy.check_price_buy_item.block_gives": "§fblock gives §6",
+      "msg.myeconomy.check_player_cmd_help_message2.line0": "§9\u003d\u003d\u003d\u003d §6MyEconomy - Check Command Help - [2/2] §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.check_player_cmd_help_message2.line7": "§9\u003d\u003d\u003d\u003d §6Type \"/check player help #\" for more - [1/2] §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.check_player_cmd_help_message2.line6": "§6stint §f- Will check the amout of times the player has been in jail",
+      "msg.myeconomy.check_player_bank_debt_player_name.msg1": "§fin bank debt!",
+      "msg.myeconomy.check_price_sell_item.error4": "§9[MyEconomy]§f: These blocks can\u0027t be sold from the server!",
+      "msg.myeconomy.check_player_cmd_help_message2.line5": "§6preJailPosition §f- Will check players position before they where jailed",
+      "msg.myeconomy.check_price_sell_cmd_message.item_amount": "§6\u003citem\u003e [amount] §f- Checks sell price with an amount!",
+      "msg.myeconomy.check_player_cmd_help_message2.line4": "§6loanDebtCap §f- Will check players loan debt limit",
+      "msg.myeconomy.check_price_sell_item.error2": "§9[MyEconomy]§f: These items can\u0027t be sold from the server!",
+      "msg.myeconomy.check_price_sell_item.error3": "§9[MyEconomy]§f: This block can\u0027t be sold from the server!",
+      "msg.myeconomy.check_price_buy_item.items_gives": "§fitems gives §6",
+      "msg.myeconomy.check_price_sell_item.error1": "§9[MyEconomy]§f: This item can\u0027t be sold from the server!",
+      "msg.myeconomy.check_price_cmd_message.price_buy": "§6buy §f- Checks the price to buy an item",
+      "msg.myeconomy.check_price_sell_item.blocks_gives": "§fblocks gives §6",
+      "msg.myeconomy.check_price_buy_item.item_gives": "§fitem gives §6",
+      "msg.myeconomy.check_player_credit_card_debt_player_name.msg1": "§fin credit card debt!",
+      "msg.myeconomy.check_player_cash_player_name.msg1": "§fin cash!",
+      "msg.myeconomy.check_player_jail_pos_player_name.msg1": "§fis jailed at the position of x: §6",
+      "msg.myeconomy.check_price_sell_cmd_message.item": "§6\u003citem\u003e §f- Checks the sell price",
+      "msg.myeconomy.check_price_buy_cmd_message.item_amount": "§6\u003citem\u003e [amount] §f- Checks buy price with an amount!",
+      "msg.myeconomy.check_player_cmd_help_message1.line0": "§9\u003d\u003d\u003d\u003d §6MyEconomy - Check Command Help - [1/2] §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.check_player_loan_debt_player_name.msg1": "§fin loan debt!",
+      "msg.myeconomy.check_player_cmd_help_message1.line1": "§6bank §f- Will check players bank money",
+      "msg.myeconomy.check_player_cmd_help_message1.line2": "§6bankDebt §f- Will check players bank debt",
+      "msg.myeconomy.check_player_home_player_name.msg2": "§f, y: §6",
+      "msg.myeconomy.check_player_cmd_help_message1.line3": "§6bankDebtCap §f- Will check players bank debt limit",
+      "msg.myeconomy.check_player_home_player_name.msg3": "§f, z: §6",
+      "msg.myeconomy.check_player_cmd_help_message1.line4": "§6cash §f- Will check players cash",
+      "msg.myeconomy.check_player_cmd_help_message1.line5": "§6creditCard §f- Will check players credit card money",
+      "msg.myeconomy.check_player_home_player_name.msg1": "§fhome is located at x: §6",
+      "msg.myeconomy.check_player_cmd_help_message1.line6": "§6creditCardDebt §f- Will check players credit card debt",
+      "msg.myeconomy.check_player_cmd_help_message1.line7": "§6creditCardDebtCap §f- Will check players credit card debt limit",
+      "msg.myeconomy.check_player_cmd_help_message1.line8": "§6homePosition §f- Will check players home position",
+      "msg.myeconomy.check_player_cmd_help_message1.line9": "§9\u003d\u003d\u003d\u003d §6Type \"/check player help #\" for more - [1/2] §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.check_price_cmd_message.price_sell": "§6sell §f- Checks the price to sell an item",
+      "msg.myeconomy.check_price_buy_item.error1": "§9[MyEconomy]§f: This item can\u0027t be bought from the server!",
+      "msg.myeconomy.check_price_buy_item.error3": "§9[MyEconomy]§f: This block can\u0027t be bought from the server!",
+      "msg.myeconomy.check_price_buy_item.error2": "§9[MyEconomy]§f: These items can\u0027t be bought from the server!",
+      "msg.myeconomy.check_player_bank_player_name.msg3": "§fin their bank!",
+      "msg.myeconomy.check_price_buy_item.mod_buying": "§9[MyEconomy]§f: Buying §6",
+      "msg.myeconomy.check_player_cmd_message.help1": "§9\u003d\u003d\u003d\u003d §6Type \"/check player help #\" for help §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.check_price_buy_item.error4": "§9[MyEconomy]§f: These blocks can\u0027t be bought from the server!",
+      "msg.myeconomy.check_player_bank_player_name.msg1": "§9[MyEconomy]§f: The player §6",
+      "msg.myeconomy.check_player_credit_card_debt_cap_player_name.msg1": "§ffor their credit card debt cap!",
+      "msg.myeconomy.check_player_bank_player_name.msg2": "§fhas §6",
+      "msg.myeconomy.check_price_buy_cmd_message.item": "§6\u003citem\u003e §f- Checks the buy price",
+      "msg.myeconomy.check_player_sub_cmd_message.help1": "§6playerName §f- Checks online/offline player data",
+      "msg.myeconomy.check_price_buy_item.blocks_gives": "§fblocks gives §6",
+      "msg.myeconomy.check_player_stint_player_name.msg1": "§fhas been in jail a total of §6",
+      "msg.myeconomy.check_price_sell_item.block_gives": "§fblock gives §6",
+      "msg.myeconomy.check_player_stint_player_name.msg2": "§ftimes!",
+      "msg.myeconomy.check_player_sub_cmd_message.help2": "§6player §f- Checks online player data",
+      "msg.myeconomy.check_player_bank_player_name.error": "§9[MyEconomy]§f: Player data could not be displayed!",
+      "msg.myeconomy.check_cmd_message.price_player": "§6player §f- Will check specific player data",
+      "msg.myeconomy.check_cmd_message.price_price": "§6price §f- Will check server/game price data",
+      "msg.myeconomy.check_player_pre_jail_pos_player_name.msg1": "§fposition before being jailed is at the position of x: §6",
+      "msg.myeconomy.check_player_bank_debt_cap_player_name.msg1": "§ffor their bank debt cap!",
+      "msg.myeconomy.check_price_sell_item.items_gives": "§fitems gives §6",
+      "msg.myeconomy.check_player_loan_player_name.msg1": "§fin loan account!",
+      "msg.myeconomy.check_player_loan_debt_cap_player_name.msg1": "§ffor their loan debt cap!",
+      "msg.myeconomy.check_price_sell_item.item_gives": "§fitem gives §6",
+      "msg.myeconomy.check_price_sell_item.mod_selling": "§9[MyEconomy]§f: Selling §6",
+      "msg.myeconomy.cmd.check_help_title": "§9\u003d\u003d\u003d\u003d §6MyEconomy - Check Command Help §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.check_player_credit_card_player_name.msg1": "§fon their credit card!"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Config Files",
+        "children": [
+          {
+            "name": "Modification",
+            "children": [
+              {
+                "name": "Generation",
+                "children": [
+                  {
+                    "name": "Mod",
+                    "children": []
+                  },
+                  {
+                    "name": "Default Player",
+                    "children": []
+                  },
+                  {
+                    "name": "Default World",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Reading",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Player",
+            "children": [
+              {
+                "name": "Script",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Commands",
+            "children": [
+              {
+                "name": "Sell",
+                "children": []
+              },
+              {
+                "name": "Buy",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "World",
+            "children": [
+              {
+                "name": "Script",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Commands",
+        "children": [
+          {
+            "name": "Sell",
+            "children": [
+              {
+                "name": "Procedures",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Buy",
+            "children": [
+              {
+                "name": "Procedures",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Check",
+            "children": [
+              {
+                "name": "Procedures",
+                "children": [
+                  {
+                    "name": "Player",
+                    "children": [
+                      {
+                        "name": "Bank",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Bank Debt",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Bank Debt Cap",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Cash",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Credit Card",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Credit Card Debt",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Credit Card Debt Cap",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Home Position",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Jail Position",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Loan",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Loan Debt",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Loan Debt Cap",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Pre Jail Position",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Stint",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Help",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Price",
+                    "children": [
+                      {
+                        "name": "Buy",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Sell",
+                        "children": [
+                          {
+                            "name": "Script",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Home",
+            "children": [
+              {
+                "name": "Procedures",
+                "children": [
+                  {
+                    "name": "Set",
+                    "children": []
+                  },
+                  {
+                    "name": "Tp",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spawn",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "Script",
+        "children": [
+          {
+            "name": "Set Home On Join",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "myeconomy",
+    "modName": "MyEconomy",
+    "version": "1.2.0",
+    "description": "MyEconomy is an external system for most of NorthWestTrees popular mods that creates player config files using an MCreator plugin called File Manager. Other mods can use the economic system built into this API modification if they wish.",
+    "author": "NorthWestTrees",
+    "websiteURL": "https://github.com/northwesttrees-gaming/MyEconomy",
+    "license": "GNU General Public License version 3 (GPLv3)",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "updateURL": "https://raw.githubusercontent.com/northwesttrees-gaming/MyEconomy/main/githubdata/updates.json",
+    "modPicture": "logo",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Mojang, Forge, MCreator",
+    "modElementsPackage": "net.nwtg.myeconomy",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

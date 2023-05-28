@@ -53,6 +53,8 @@ public class MyeconomyModVariables {
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "myeconomy_worldvars";
+		public String worldNamespace = "";
+		public String worldName = "";
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -61,10 +63,14 @@ public class MyeconomyModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
+			worldNamespace = nbt.getString("worldNamespace");
+			worldName = nbt.getString("worldName");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
+			nbt.putString("worldNamespace", worldNamespace);
+			nbt.putString("worldName", worldName);
 			return nbt;
 		}
 
@@ -87,7 +93,7 @@ public class MyeconomyModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "myeconomy_mapvars";
-		public double version = 1.0;
+		public double version = 3.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();

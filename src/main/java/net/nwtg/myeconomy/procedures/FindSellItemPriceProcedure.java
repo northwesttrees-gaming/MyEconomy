@@ -2,8 +2,6 @@ package net.nwtg.myeconomy.procedures;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.nwtg.myeconomy.MyeconomyMod;
-
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.loading.FMLPaths;
 
@@ -34,6 +32,7 @@ public class FindSellItemPriceProcedure {
 		String namespaceString = "";
 		double configNumber = 0;
 		double substring = 0;
+		ItemStack item = ItemStack.EMPTY;
 		file = new File((FMLPaths.GAMEDIR.get().toString() + "/config/myeconomy"), File.separator + "sell_items.json");
 		if (file.exists()) {
 			{
@@ -48,7 +47,6 @@ public class FindSellItemPriceProcedure {
 					mainObject = new Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
 					subObject0 = mainObject.get("items").getAsJsonObject();
 					configNumber = 1;
-					MyeconomyMod.LOGGER.info("" + subObject0.size());
 					for (int index0 = 0; index0 < (int) (subObject0.size()); index0++) {
 						configString = subObject0.get((new java.text.DecimalFormat("##").format(configNumber))).getAsString();
 						priceString = configString;
@@ -73,14 +71,11 @@ public class FindSellItemPriceProcedure {
 							}
 							substring = substring + 1;
 						}
-						MyeconomyMod.LOGGER.info("" + priceString);
-						MyeconomyMod.LOGGER.info("" + typeString);
-						MyeconomyMod.LOGGER.info("" + namespaceString);
-						if ((typeString).equals("reg") && (ForgeRegistries.ITEMS.getKey((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()).toString()).equals(namespaceString)) {
+						item = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						if ((typeString).equals("reg") && (ForgeRegistries.ITEMS.getKey(item.getItem()).toString()).equals(namespaceString)) {
 							foundMatch = true;
 							break;
-						} else if ((typeString).equals("tag")
-								&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation((namespaceString).toLowerCase(java.util.Locale.ENGLISH))))) {
+						} else if ((typeString).equals("tag") && item.is(ItemTags.create(new ResourceLocation((namespaceString).toLowerCase(java.util.Locale.ENGLISH))))) {
 							foundMatch = true;
 							break;
 						} else {
@@ -103,6 +98,6 @@ public class FindSellItemPriceProcedure {
 				}.convert(priceString);
 			}
 		}
-		return 0;
+		return -1;
 	}
 }
