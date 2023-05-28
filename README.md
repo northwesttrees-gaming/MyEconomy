@@ -5,7 +5,7 @@ MyEconomy is an external system for most of NorthWestTrees popular mods that cre
 - ### Recomended Build
   - 1.3.0 for 1.19.2
 - ### Latest Build
-  - 1.2.0 for 1.19.2
+  - 1.3.0 for 1.19.2
 
 # Quick Pages
 - ### ⭐ [Mod Releases](https://github.com/northwesttrees-gaming/MyEconomy/releases)
