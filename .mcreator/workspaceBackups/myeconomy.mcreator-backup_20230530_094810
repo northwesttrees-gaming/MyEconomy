@@ -3702,20 +3702,6 @@
         ]
       },
       "path": "~/Config Files/Modification/Generation/Mod"
-    },
-    {
-      "name": "Spawn",
-      "type": "command",
-      "sortid": 263,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/nwtg/myeconomy/command/SpawnCommand.java"
-        ]
-      },
-      "path": "~/Commands/Spawn"
     }
   ],
   "variable_elements": [

@@ -5,6 +5,7 @@ import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
@@ -72,8 +73,19 @@ public class HomeTpPlayerProcedure {
 							_level.getServer().getCommands().performPrefixedCommand(
 									new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 									("execute in " + homeWorld + " run tp @p " + (homePosX + " ") + (homePosY + " ") + ("" + homePosZ)));
+						if (entity instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_tp_player_name.success").getString())), (false));
+					} else {
+						if (entity instanceof Player _player && !_player.level.isClientSide())
+							_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_tp_player_name.error3").getString())), (false));
 					}
+				} else {
+					if (entity instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_tp_player_name.error2").getString())), (false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_tp_player_name.error1").getString())), (false));
 			}
 		}
 	}
