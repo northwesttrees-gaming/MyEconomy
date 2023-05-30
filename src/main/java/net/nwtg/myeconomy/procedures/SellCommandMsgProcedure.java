@@ -11,9 +11,9 @@ public class SellCommandMsgProcedure {
 			return;
 		if (!world.isClientSide()) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("\u00A79[MyEconomy] - Sell Command"), (false));
+				_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.sell_command_msg.title").getString())), (false));
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("\u00A76/sell <items> <hand> [amount]\u00A7f: Sells items from your main hand."), (false));
+				_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.sell_command_msg.cmd1").getString())), (false));
 		}
 	}
 }

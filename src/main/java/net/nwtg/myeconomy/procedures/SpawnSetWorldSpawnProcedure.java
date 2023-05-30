@@ -18,14 +18,14 @@ import java.io.BufferedReader;
 import com.google.gson.GsonBuilder;
 import com.google.gson.Gson;
 
-public class HomeSetPlayerDefualtProcedure {
+public class SpawnSetWorldSpawnProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		File file = new File("");
 		com.google.gson.JsonObject mainObject = new com.google.gson.JsonObject();
 		if (!world.isClientSide()) {
-			file = new File((FMLPaths.GAMEDIR.get().toString() + "/config/myeconomy/players"), File.separator + (entity.getDisplayName().getString() + ".json"));
+			file = new File((FMLPaths.GAMEDIR.get().toString() + "/config/myeconomy/worlds"), File.separator + (MyeconomyModVariables.WorldVariables.get(world).worldName + ".json"));
 			if (file.exists()) {
 				{
 					try {
@@ -57,10 +57,10 @@ public class HomeSetPlayerDefualtProcedure {
 					}
 				}
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_set_player_default.success").getString())), (false));
+					_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.spawn_set_world_spawn.success").getString())), (false));
 			} else {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_tp_player_default.error1").getString())), (false));
+					_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.spawn_tp_player.error1").getString())), (false));
 			}
 		}
 	}

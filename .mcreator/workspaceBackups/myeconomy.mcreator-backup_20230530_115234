@@ -143,7 +143,7 @@
           }
         ]
       },
-      "path": "~/Commands/Sell/Procedures"
+      "path": "~/Commands/Sell/Procedures/Script"
     },
     {
       "name": "EconomyPlanksItem",
@@ -206,7 +206,7 @@
           }
         ]
       },
-      "path": "~/Commands/Buy/Procedures"
+      "path": "~/Commands/Buy/Procedures/Script"
     },
     {
       "name": "GenerateEconomyBuyConfig",
@@ -3716,6 +3716,99 @@
         ]
       },
       "path": "~/Commands/Spawn"
+    },
+    {
+      "name": "SpawnCmdMessage",
+      "type": "procedure",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_cmd_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/SpawnCmdMessageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Spawn/Procedures"
+    },
+    {
+      "name": "SpawnTpPlayer",
+      "type": "procedure",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_tp_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/SpawnTpPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Spawn/Procedures/Tp"
+    },
+    {
+      "name": "SpawnSetWorldSpawn",
+      "type": "procedure",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_set_world_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/SpawnSetWorldSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Commands/Spawn/Procedures/Set"
+    },
+    {
+      "name": "GetSettingsSpawnTpPermission",
+      "type": "procedure",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_settings_spawn_tp_permission",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/nwtg/myeconomy/procedures/GetSettingsSpawnTpPermissionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Config Files/Modification/Reading"
     }
   ],
   "variable_elements": [
@@ -3741,53 +3834,108 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "msg.myeconomy.check_price_buy_item.block_gives": "§fblock gives §6",
       "msg.myeconomy.check_player_bank_debt_player_name.msg1": "§fin bank debt!",
-      "msg.myeconomy.check_price_sell_item.error4": "§9[MyEconomy]§f: These blocks can\u0027t be sold from the server!",
-      "msg.myeconomy.check_price_sell_cmd_message.item_amount": "§6\u003citem\u003e [amount] §f- Checks sell price with an amount!",
-      "msg.myeconomy.check_price_sell_item.error2": "§9[MyEconomy]§f: These items can\u0027t be sold from the server!",
-      "msg.myeconomy.check_price_sell_item.error3": "§9[MyEconomy]§f: This block can\u0027t be sold from the server!",
+      "msg.myeconomy.check_price_sell_item.error4": "§9[MyEconomy]§f: These blocks can\u0027t be sold",
+      "msg.myeconomy.sell_command_msg.cmd1": "§6/sell \u003citems\u003e \u003chand\u003e [amount]§f: Sells items from your main hand",
+      "msg.myeconomy.check_price_sell_cmd_message.item_amount": "§6\u003citem\u003e [amount] §f- Checks sell price with an amount",
+      "msg.myeconomy.check_price_sell_item.error2": "§9[MyEconomy]§f: These items can\u0027t be sold",
+      "msg.myeconomy.check_price_sell_item.error3": "§9[MyEconomy]§f: This block can\u0027t be sold",
+      "msg.myeconomy.check_price_sell_item.error1": "§9[MyEconomy]§f: This item can\u0027t be sold",
+      "msg.myeconomy.check_player_cash_player_name.msg1": "§fin cash!",
+      "msg.myeconomy.check_player_cmd_help_message1.line0": "§9\u003d\u003d\u003d\u003d §6MyEconomy - Check Command Help - [1/2] §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.check_player_loan_debt_player_name.msg1": "§fin loan debt!",
+      "msg.myeconomy.check_player_cmd_help_message1.line1": "§6bank §f- Will check players bank money",
+      "msg.myeconomy.check_player_cmd_help_message1.line2": "§6bankDebt §f- Will check players bank debt",
+      "msg.myeconomy.check_player_cmd_help_message1.line3": "§6bankDebtCap §f- Will check players bank debt limit",
+      "msg.myeconomy.check_player_cmd_help_message1.line4": "§6cash §f- Will check players cash",
+      "msg.myeconomy.check_player_cmd_help_message1.line5": "§6creditCard §f- Will check players credit card money",
+      "msg.myeconomy.check_player_cmd_help_message1.line6": "§6creditCardDebt §f- Will check players credit card debt",
+      "msg.myeconomy.check_player_cmd_help_message1.line7": "§6creditCardDebtCap §f- Will check players credit card debt limit",
+      "msg.myeconomy.check_player_cmd_help_message1.line8": "§6homePosition §f- Will check players home position",
+      "msg.myeconomy.home_set_player_name.error1": "§9[MyEconomy]§f: You don\u0027t have permission to set another player\u0027s home",
+      "msg.myeconomy.home_cmd_message.cmd2a": "§6tp [player|playerName] §f- This will teleport you to a player\u0027s home",
+      "msg.myeconomy.check_player_cmd_help_message1.line9": "§9\u003d\u003d\u003d\u003d §6Type \"/check player help #\" for more - [1/2] §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.home_cmd_message.title": "§9\u003d\u003d\u003d\u003d §6MyEconomy - Home Command Help §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.home_cmd_message.cmd2b": "§6tp §f- This will teleport you to your home",
+      "msg.myeconomy.check_price_buy_item.error1": "§9[MyEconomy]§f: This item can\u0027t be bought from the server",
+      "msg.myeconomy.check_price_buy_item.error3": "§9[MyEconomy]§f: This block can\u0027t be bought from the server",
+      "msg.myeconomy.check_price_buy_item.error2": "§9[MyEconomy]§f: These items can\u0027t be bought from the server",
+      "msg.myeconomy.check_player_bank_player_name.msg3": "§fin their bank!",
+      "msg.myeconomy.check_price_buy_item.error4": "§9[MyEconomy]§f: These blocks can\u0027t be bought from the server",
+      "msg.myeconomy.check_player_bank_player_name.msg1": "§9[MyEconomy]§f: The player §6",
+      "msg.myeconomy.check_player_bank_player_name.msg2": "§fhas §6",
+      "msg.myeconomy.check_price_buy_cmd_message.item": "§6\u003citem\u003e §f- Checks the buy price",
+      "msg.myeconomy.check_price_buy_item.blocks_gives": "§fblocks gives §6",
+      "msg.myeconomy.check_player_stint_player_name.msg1": "§fhas been in jail a total of §6",
+      "msg.myeconomy.spawn_set_world_spawn.success": "§9[MyEconomy]§f: You have set the spawn for this world",
+      "msg.myeconomy.check_player_stint_player_name.msg2": "§ftimes!",
+      "msg.myeconomy.check_cmd_message.price_player": "§6player §f- Will check specific player data",
+      "msg.myeconomy.sell_command_msg.title": "§9\u003d\u003d\u003d\u003d §6MyEconomy - Sell Command Help §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.spawn_cmd_message.cmd1": "§6set §f- This will set the world\u0027s spawn point",
+      "msg.myeconomy.check_player_bank_debt_cap_player_name.msg1": "§ffor their bank debt cap!",
+      "msg.myeconomy.check_price_sell_item.items_gives": "§fitems gives §6",
+      "msg.myeconomy.spawn_tp_player.success": "§9[MyEconomy]§f: You have been teleported to the world spawn",
+      "msg.myeconomy.check_player_loan_debt_cap_player_name.msg1": "§ffor their loan debt cap!",
+      "msg.myeconomy.home_tp_player_name.error1": "§9[MyEconomy]§f: You don\u0027t have permission to teleport to another player\u0027s home",
+      "msg.myeconomy.home_tp_player_name.error2": "§9[MyEconomy]§f: This player is missing their config",
+      "msg.myeconomy.home_tp_player_name.error3": "§9[MyEconomy]§f: This player does not have a home",
+      "msg.myeconomy.buy_items_item_command.error2": "§9[MyEconomy]§f: You can\u0027t buy this item",
+      "msg.myeconomy.buy_items_item_command.error3": "§9[MyEconomy]§f: You don\u0027t have enough cash to buy this item",
+      "msg.myeconomy.check_price_sell_item.mod_selling": "§9[MyEconomy]§f: Selling §6",
+      "msg.myeconomy.check_player_cmd_help_message2.line3": "§6loanDebt §f- Will check players loan debt",
+      "msg.myeconomy.home_set_player_name.success": "§9[MyEconomy]§f: You have set this player\u0027s home",
+      "msg.myeconomy.check_player_cmd_help_message2.line2": "§6loan §f- Will check players loan money",
+      "msg.myeconomy.check_player_cmd_help_message2.line1": "§6jailPosition §f- Will check players jail position",
+      "msg.myeconomy.check_price_buy_item.block_gives": "§fblock gives §6",
+      "msg.myeconomy.check_player_cmd_help_message2.line0": "§9\u003d\u003d\u003d\u003d §6MyEconomy - Check Command Help - [2/2] §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.sell_items_hand_command.success2": "§r for a total of §n",
+      "msg.myeconomy.sell_items_hand_command.success1": "§9[MyEconomy]§f: You sold §n",
+      "msg.myeconomy.check_player_cmd_help_message2.line7": "§9\u003d\u003d\u003d\u003d §6Type \"/check player help #\" for more - [1/2] §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.check_player_cmd_help_message2.line6": "§6stint §f- Will check the amout of times the player has been in jail",
+      "msg.myeconomy.check_player_cmd_help_message2.line5": "§6preJailPosition §f- Will check players position before they where jailed",
+      "msg.myeconomy.check_player_cmd_help_message2.line4": "§6loanDebtCap §f- Will check players loan debt limit",
       "msg.myeconomy.check_price_buy_item.items_gives": "§fitems gives §6",
-      "msg.myeconomy.check_price_sell_item.error1": "§9[MyEconomy]§f: This item can\u0027t be sold from the server!",
       "msg.myeconomy.check_price_cmd_message.price_buy": "§6buy §f- Checks the price to buy an item",
       "msg.myeconomy.check_price_sell_item.blocks_gives": "§fblocks gives §6",
+      "msg.myeconomy.home_set_player_default.success": "§9[MyEconomy]§f: You have set this your home",
       "msg.myeconomy.check_price_buy_item.item_gives": "§fitem gives §6",
       "msg.myeconomy.check_player_credit_card_debt_player_name.msg1": "§fin credit card debt!",
-      "msg.myeconomy.check_player_cash_player_name.msg1": "§fin cash!",
+      "msg.myeconomy.check_player_jail_pos_player_name.msg1": "§fis jailed at the position of x: §6",
       "msg.myeconomy.check_price_sell_cmd_message.item": "§6\u003citem\u003e §f- Checks the sell price",
+      "msg.myeconomy.sell_items_hand_command.error1": "§9[MyEconomy]§f: Your don\u0027t have a config file",
       "msg.myeconomy.check_price_buy_cmd_message.item_amount": "§6\u003citem\u003e [amount] §f- Checks buy price with an amount!",
-      "msg.myeconomy.check_player_loan_debt_player_name.msg1": "§fin loan debt!",
+      "msg.myeconomy.sell_items_hand_command.error3": "§9[MyEconomy]§f: You don\u0027t have enough items in your main hand",
+      "msg.myeconomy.sell_items_hand_command.error2": "§9[MyEconomy]§f: This item can\u0027t be sold",
+      "msg.myeconomy.buy_items_item_command.success1": "§9[MyEconomy]§f: You purchased §n",
       "msg.myeconomy.check_player_home_player_name.msg2": "§f, y: §6",
       "msg.myeconomy.check_player_home_player_name.msg3": "§f, z: §6",
       "msg.myeconomy.check_player_home_player_name.msg1": "§fhome is located at x: §6",
       "msg.myeconomy.check_price_cmd_message.price_sell": "§6sell §f- Checks the price to sell an item",
-      "msg.myeconomy.check_price_buy_item.error1": "§9[MyEconomy]§f: This item can\u0027t be bought from the server!",
-      "msg.myeconomy.check_price_buy_item.error3": "§9[MyEconomy]§f: This block can\u0027t be bought from the server!",
-      "msg.myeconomy.check_price_buy_item.error2": "§9[MyEconomy]§f: These items can\u0027t be bought from the server!",
-      "msg.myeconomy.check_player_bank_player_name.msg3": "§fin their bank!",
+      "msg.myeconomy.buy_command_msg.title": "§9\u003d\u003d\u003d\u003d §6MyEconomy - Buy Command Help §9\u003d\u003d\u003d\u003d",
       "msg.myeconomy.check_price_buy_item.mod_buying": "§9[MyEconomy]§f: Buying §6",
       "msg.myeconomy.check_player_cmd_message.help1": "§9\u003d\u003d\u003d\u003d §6Type \"/check player help #\" for help §9\u003d\u003d\u003d\u003d",
-      "msg.myeconomy.check_price_buy_item.error4": "§9[MyEconomy]§f: These blocks can\u0027t be bought from the server!",
-      "msg.myeconomy.check_player_bank_player_name.msg1": "§9[MyEconomy]§f: The player §6",
       "msg.myeconomy.check_player_credit_card_debt_cap_player_name.msg1": "§ffor their credit card debt cap!",
-      "msg.myeconomy.check_player_bank_player_name.msg2": "§fhas §6",
-      "msg.myeconomy.check_price_buy_cmd_message.item": "§6\u003citem\u003e §f- Checks the buy price",
+      "msg.myeconomy.buy_command_msg.cmd1": "§6/buy items \u003citem\u003e \u003camount\u003e§f: Purchases a item from the game!",
+      "msg.myeconomy.home_cmd_message.cmd1b": "§6set §f- This will set your home",
       "msg.myeconomy.check_player_sub_cmd_message.help1": "§6playerName §f- Checks online/offline player data",
-      "msg.myeconomy.check_price_buy_item.blocks_gives": "§fblocks gives §6",
-      "msg.myeconomy.check_player_stint_player_name.msg1": "§fhas been in jail a total of §6",
+      "msg.myeconomy.home_tp_player_default.error1": "§9[MyEconomy]§f: You are missing your config",
+      "msg.myeconomy.home_tp_player_default.error2": "§9[MyEconomy]§f: You do not have a home",
       "msg.myeconomy.check_price_sell_item.block_gives": "§fblock gives §6",
-      "msg.myeconomy.check_player_stint_player_name.msg2": "§ftimes!",
       "msg.myeconomy.check_player_sub_cmd_message.help2": "§6player §f- Checks online player data",
-      "msg.myeconomy.check_player_bank_player_name.error": "§9[MyEconomy]§f: Player data could not be displayed!",
-      "msg.myeconomy.check_cmd_message.price_player": "§6player §f- Will check specific player data",
+      "msg.myeconomy.home_cmd_message.cmd1a": "§6set [player|playerName] §f- This will set a players home",
+      "msg.myeconomy.check_player_bank_player_name.error": "§9[MyEconomy]§f: Player data could not be displayed",
       "msg.myeconomy.check_cmd_message.price_price": "§6price §f- Will check server/game price data",
-      "msg.myeconomy.check_player_bank_debt_cap_player_name.msg1": "§ffor their bank debt cap!",
-      "msg.myeconomy.check_price_sell_item.items_gives": "§fitems gives §6",
+      "msg.myeconomy.check_player_pre_jail_pos_player_name.msg1": "§fposition before being jailed is at the position of x: §6",
+      "msg.myeconomy.spawn_tp_player.error2": "§9[MyEconomy]§f: This world does not have it\u0027s spawn set",
+      "msg.myeconomy.spawn_tp_player.error1": "§9[MyEconomy]§f: This world does not have a config file",
       "msg.myeconomy.check_player_loan_player_name.msg1": "§fin loan account!",
-      "msg.myeconomy.check_player_loan_debt_cap_player_name.msg1": "§ffor their loan debt cap!",
+      "msg.myeconomy.spawn_cmd_message.title": "§9\u003d\u003d\u003d\u003d §6MyEconomy - Spawn Command Help §9\u003d\u003d\u003d\u003d",
       "msg.myeconomy.check_price_sell_item.item_gives": "§fitem gives §6",
-      "msg.myeconomy.check_price_sell_item.mod_selling": "§9[MyEconomy]§f: Selling §6",
+      "msg.myeconomy.home_tp_player_default.success": "§9[MyEconomy]§f: You have been teleported to your home",
       "msg.myeconomy.cmd.check_help_title": "§9\u003d\u003d\u003d\u003d §6MyEconomy - Check Command Help §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.spawn_cmd_message.cmd2b": "§9[MyEconomy]§f: You don\u0027t have permission to use this command",
+      "msg.myeconomy.spawn_cmd_message.cmd2a": "§6tp §f- This will teleport you to the world\u0027s spawn point",
+      "msg.myeconomy.home_tp_player_name.success": "§9[MyEconomy]§f: You have been teleported to the player\u0027s home",
       "msg.myeconomy.check_player_credit_card_player_name.msg1": "§fon their credit card!"
     }
   },
@@ -3864,7 +4012,12 @@
             "children": [
               {
                 "name": "Procedures",
-                "children": []
+                "children": [
+                  {
+                    "name": "Script",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -3873,7 +4026,12 @@
             "children": [
               {
                 "name": "Procedures",
-                "children": []
+                "children": [
+                  {
+                    "name": "Script",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -4070,7 +4228,21 @@
           },
           {
             "name": "Spawn",
-            "children": []
+            "children": [
+              {
+                "name": "Procedures",
+                "children": [
+                  {
+                    "name": "Set",
+                    "children": []
+                  },
+                  {
+                    "name": "Tp",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           }
         ]
       },

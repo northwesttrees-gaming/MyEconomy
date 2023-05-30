@@ -5,7 +5,9 @@ import net.nwtg.myeconomy.network.MyeconomyModVariables;
 import net.minecraftforge.fml.loading.FMLPaths;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 
 import java.io.IOException;
@@ -59,7 +61,15 @@ public class HomeSetPlayerNameProcedure {
 							e.printStackTrace();
 						}
 					}
+					if (entity instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_set_player_name.success").getString())), (false));
+				} else {
+					if (entity instanceof Player _player && !_player.level.isClientSide())
+						_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_tp_player_name.error2").getString())), (false));
 				}
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_set_player_name.error1").getString())), (false));
 			}
 		}
 	}
