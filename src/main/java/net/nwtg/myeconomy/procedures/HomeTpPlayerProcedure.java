@@ -60,7 +60,7 @@ public class HomeTpPlayerProcedure {
 							hasHome = mainObject.get("has_home").getAsBoolean();
 							if (hasHome) {
 								homePosX = mainObject.get("home_x").getAsDouble();
-								homePosY = mainObject.get("home_y").getAsDouble();
+								homePosY = Math.floor(mainObject.get("home_y").getAsDouble());
 								homePosZ = mainObject.get("home_z").getAsDouble();
 								homeWorld = mainObject.get("home_world").getAsString();
 							}

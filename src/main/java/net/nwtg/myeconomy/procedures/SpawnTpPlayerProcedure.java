@@ -1,5 +1,7 @@
 package net.nwtg.myeconomy.procedures;
 
+import net.nwtg.myeconomy.network.MyeconomyModVariables;
+
 import net.minecraftforge.fml.loading.FMLPaths;
 
 import net.minecraft.world.phys.Vec3;
@@ -19,19 +21,19 @@ import java.io.BufferedReader;
 
 import com.google.gson.Gson;
 
-public class HomeTpPlayerDefaultProcedure {
+public class SpawnTpPlayerProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		File file = new File("");
 		com.google.gson.JsonObject mainObject = new com.google.gson.JsonObject();
-		boolean hasHome = false;
-		double homePosX = 0;
-		double homePosY = 0;
-		double homePosZ = 0;
-		String homeWorld = "";
+		boolean isSpawnSet = false;
+		double spawnX = 0;
+		double spawnY = 0;
+		double spawnZ = 0;
+		String spawnWorld = "";
 		if (!world.isClientSide()) {
-			file = new File((FMLPaths.GAMEDIR.get().toString() + "/config/myeconomy/players"), File.separator + (entity.getDisplayName().getString() + ".json"));
+			file = new File((FMLPaths.GAMEDIR.get().toString() + "/config/myeconomy/worlds"), File.separator + (MyeconomyModVariables.WorldVariables.get(world).worldName + ".json"));
 			if (file.exists()) {
 				{
 					try {
@@ -43,31 +45,31 @@ public class HomeTpPlayerDefaultProcedure {
 						}
 						bufferedReader.close();
 						mainObject = new Gson().fromJson(jsonstringbuilder.toString(), com.google.gson.JsonObject.class);
-						hasHome = mainObject.get("has_home").getAsBoolean();
-						if (hasHome) {
-							homePosX = mainObject.get("home_x").getAsDouble();
-							homePosY = Math.floor(mainObject.get("home_y").getAsDouble());
-							homePosZ = mainObject.get("home_z").getAsDouble();
-							homeWorld = mainObject.get("home_world").getAsString();
+						isSpawnSet = mainObject.get("is_spawn_set").getAsBoolean();
+						if (isSpawnSet) {
+							spawnX = mainObject.get("spawn_x").getAsDouble();
+							spawnY = Math.floor(mainObject.get("spawn_y").getAsDouble());
+							spawnZ = mainObject.get("spawn_z").getAsDouble();
+							spawnWorld = mainObject.get("spawn_world").getAsString();
 						}
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
 				}
-				if (hasHome) {
+				if (isSpawnSet) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								("execute in " + homeWorld + " run tp @p " + (homePosX + " ") + (homePosY + " ") + ("" + homePosZ)));
+								("execute in " + spawnWorld + " run tp @p " + (spawnX + " ") + (spawnY + " ") + ("" + spawnZ)));
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_tp_player_default.success").getString())), (false));
+						_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.spawn_tp_player.success").getString())), (false));
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_tp_player_default.error2").getString())), (false));
+						_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.spawn_tp_player.error2").getString())), (false));
 				}
 			} else {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_tp_player_default.error1").getString())), (false));
+					_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.spawn_tp_player.error1").getString())), (false));
 			}
 		}
 	}
