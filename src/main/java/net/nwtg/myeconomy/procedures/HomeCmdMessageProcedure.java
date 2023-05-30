@@ -11,11 +11,21 @@ public class HomeCmdMessageProcedure {
 			return;
 		if (!world.isClientSide()) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("\u00A79==== \u00A76MyEconomy - Home Command Help \u00A79===="), (false));
-			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("\u00A76set [player|playerName] \u00A7f- Will set a players home"), (false));
-			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("\u00A76tp [player|playerName] \u00A7f- Will teleport to a players home"), (false));
+				_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_cmd_message.title").getString())), (false));
+			if (entity.hasPermissions(2)) {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_cmd_message.cmd1a").getString())), (false));
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_cmd_message.cmd1b").getString())), (false));
+			}
+			if (GetSettingsHomeTpPermissionProcedure.execute(world)) {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_cmd_message.cmd2a").getString())), (false));
+			} else {
+				if (entity instanceof Player _player && !_player.level.isClientSide())
+					_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_cmd_message.cmd2b").getString())), (false));
+			}
 		}
 	}
 }

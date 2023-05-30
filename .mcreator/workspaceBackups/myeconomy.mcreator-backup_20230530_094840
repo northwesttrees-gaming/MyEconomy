@@ -3702,20 +3702,6 @@
         ]
       },
       "path": "~/Config Files/Modification/Generation/Mod"
-    },
-    {
-      "name": "Spawn",
-      "type": "command",
-      "sortid": 263,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/nwtg/myeconomy/command/SpawnCommand.java"
-        ]
-      },
-      "path": "~/Commands/Spawn"
     }
   ],
   "variable_elements": [
@@ -3741,10 +3727,18 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "msg.myeconomy.check_player_cmd_help_message2.line3": "§6loanDebt §f- Will check players loan debt",
+      "msg.myeconomy.check_player_cmd_help_message2.line2": "§6loan §f- Will check players loan money",
+      "msg.myeconomy.check_player_cmd_help_message2.line1": "§6jailPosition §f- Will check players jail position",
       "msg.myeconomy.check_price_buy_item.block_gives": "§fblock gives §6",
+      "msg.myeconomy.check_player_cmd_help_message2.line0": "§9\u003d\u003d\u003d\u003d §6MyEconomy - Check Command Help - [2/2] §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.check_player_cmd_help_message2.line7": "§9\u003d\u003d\u003d\u003d §6Type \"/check player help #\" for more - [1/2] §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.check_player_cmd_help_message2.line6": "§6stint §f- Will check the amout of times the player has been in jail",
       "msg.myeconomy.check_player_bank_debt_player_name.msg1": "§fin bank debt!",
       "msg.myeconomy.check_price_sell_item.error4": "§9[MyEconomy]§f: These blocks can\u0027t be sold from the server!",
+      "msg.myeconomy.check_player_cmd_help_message2.line5": "§6preJailPosition §f- Will check players position before they where jailed",
       "msg.myeconomy.check_price_sell_cmd_message.item_amount": "§6\u003citem\u003e [amount] §f- Checks sell price with an amount!",
+      "msg.myeconomy.check_player_cmd_help_message2.line4": "§6loanDebtCap §f- Will check players loan debt limit",
       "msg.myeconomy.check_price_sell_item.error2": "§9[MyEconomy]§f: These items can\u0027t be sold from the server!",
       "msg.myeconomy.check_price_sell_item.error3": "§9[MyEconomy]§f: This block can\u0027t be sold from the server!",
       "msg.myeconomy.check_price_buy_item.items_gives": "§fitems gives §6",
@@ -3754,12 +3748,24 @@
       "msg.myeconomy.check_price_buy_item.item_gives": "§fitem gives §6",
       "msg.myeconomy.check_player_credit_card_debt_player_name.msg1": "§fin credit card debt!",
       "msg.myeconomy.check_player_cash_player_name.msg1": "§fin cash!",
+      "msg.myeconomy.check_player_jail_pos_player_name.msg1": "§fis jailed at the position of x: §6",
       "msg.myeconomy.check_price_sell_cmd_message.item": "§6\u003citem\u003e §f- Checks the sell price",
       "msg.myeconomy.check_price_buy_cmd_message.item_amount": "§6\u003citem\u003e [amount] §f- Checks buy price with an amount!",
+      "msg.myeconomy.check_player_cmd_help_message1.line0": "§9\u003d\u003d\u003d\u003d §6MyEconomy - Check Command Help - [1/2] §9\u003d\u003d\u003d\u003d",
       "msg.myeconomy.check_player_loan_debt_player_name.msg1": "§fin loan debt!",
+      "msg.myeconomy.check_player_cmd_help_message1.line1": "§6bank §f- Will check players bank money",
+      "msg.myeconomy.check_player_cmd_help_message1.line2": "§6bankDebt §f- Will check players bank debt",
       "msg.myeconomy.check_player_home_player_name.msg2": "§f, y: §6",
+      "msg.myeconomy.check_player_cmd_help_message1.line3": "§6bankDebtCap §f- Will check players bank debt limit",
       "msg.myeconomy.check_player_home_player_name.msg3": "§f, z: §6",
+      "msg.myeconomy.check_player_cmd_help_message1.line4": "§6cash §f- Will check players cash",
+      "msg.myeconomy.check_player_cmd_help_message1.line5": "§6creditCard §f- Will check players credit card money",
       "msg.myeconomy.check_player_home_player_name.msg1": "§fhome is located at x: §6",
+      "msg.myeconomy.check_player_cmd_help_message1.line6": "§6creditCardDebt §f- Will check players credit card debt",
+      "msg.myeconomy.check_player_cmd_help_message1.line7": "§6creditCardDebtCap §f- Will check players credit card debt limit",
+      "msg.myeconomy.check_player_cmd_help_message1.line8": "§6homePosition §f- Will check players home position",
+      "msg.myeconomy.check_player_cmd_help_message1.line9": "§9\u003d\u003d\u003d\u003d §6Type \"/check player help #\" for more - [1/2] §9\u003d\u003d\u003d\u003d",
+      "msg.myeconomy.home_cmd_message.title": "§9\u003d\u003d\u003d\u003d §6MyEconomy - Home Command Help §9\u003d\u003d\u003d\u003d",
       "msg.myeconomy.check_price_cmd_message.price_sell": "§6sell §f- Checks the price to sell an item",
       "msg.myeconomy.check_price_buy_item.error1": "§9[MyEconomy]§f: This item can\u0027t be bought from the server!",
       "msg.myeconomy.check_price_buy_item.error3": "§9[MyEconomy]§f: This block can\u0027t be bought from the server!",
@@ -3781,6 +3787,7 @@
       "msg.myeconomy.check_player_bank_player_name.error": "§9[MyEconomy]§f: Player data could not be displayed!",
       "msg.myeconomy.check_cmd_message.price_player": "§6player §f- Will check specific player data",
       "msg.myeconomy.check_cmd_message.price_price": "§6price §f- Will check server/game price data",
+      "msg.myeconomy.check_player_pre_jail_pos_player_name.msg1": "§fposition before being jailed is at the position of x: §6",
       "msg.myeconomy.check_player_bank_debt_cap_player_name.msg1": "§ffor their bank debt cap!",
       "msg.myeconomy.check_price_sell_item.items_gives": "§fitems gives §6",
       "msg.myeconomy.check_player_loan_player_name.msg1": "§fin loan account!",
