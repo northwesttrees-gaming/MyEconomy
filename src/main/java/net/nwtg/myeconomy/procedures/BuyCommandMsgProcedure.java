@@ -11,9 +11,9 @@ public class BuyCommandMsgProcedure {
 			return;
 		if (!world.isClientSide()) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("\u00A79[MyEconomy] - Buy Command"), (false));
+				_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.buy_command_msg.title").getString())), (false));
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("\u00A76/buy items <item> <amount>\u00A7f: Purchases a item from the game!"), (false));
+				_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.buy_command_msg.cmd1").getString())), (false));
 		}
 	}
 }

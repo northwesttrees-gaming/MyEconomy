@@ -72,12 +72,11 @@ public class BuyItemsItemCommandProcedure {
 								name = name.replace("[", "");
 								name = name.replace("]", "");
 								if (entity instanceof Player _player && !_player.level.isClientSide())
-									_player.displayClientMessage(Component.literal(
-											("\u00A79[NorthGuard]\u00A7f: You purchased \u00A7n" + itemTotal + " " + name + "\u00A7r for a total of \u00A7n" + GetConfigCurrencyIconProcedure.execute(world) + " " + sellPrice * itemTotal + "!")),
-											(false));
+									_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.buy_items_item_command.success1").getString() + "" + itemTotal + " " + name
+											+ Component.translatable("msg.myeconomy.sell_items_hand_command.success2").getString() + sellPrice * itemTotal + " " + GetConfigCurrencyIconProcedure.execute(world))), (false));
 							} else {
 								if (entity instanceof Player _player && !_player.level.isClientSide())
-									_player.displayClientMessage(Component.literal("\u00A79[MyEconomy]\u00A7f: You don't have enough cash to buy this item!"), (false));
+									_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.buy_items_item_command.error3").getString())), (false));
 							}
 						} catch (IOException e) {
 							e.printStackTrace();
@@ -85,11 +84,11 @@ public class BuyItemsItemCommandProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(Component.literal("\u00A79[MyEconomy]\u00A7f: You can't buy this item from the world!"), (false));
+						_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.buy_items_item_command.error2").getString())), (false));
 				}
 			} else {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.literal("\u00A79[MyEconomy]\u00A7f: Your player config file does not exist!"), (false));
+					_player.displayClientMessage(Component.literal((Component.translatable("msg.myeconomy.home_tp_player_default.error1").getString())), (false));
 			}
 		}
 	}
